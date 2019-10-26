@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ThemeProvider } from './components/ThemeContext';
+import App from './App';
 
-const App = () => <h1>React starter</h1>;
-
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>
+  , document.getElementById('app'));
 
 if (process.env.NODE_ENV === 'development') module.hot.accept();
