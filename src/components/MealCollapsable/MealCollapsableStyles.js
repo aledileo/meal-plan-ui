@@ -29,9 +29,5 @@ export const Summary = styled.summary`
 export const FoodList = styled.ul`
   margin: 0px;
   list-style: none;
-  padding: 8px 32px;
-`
-
-export const ListItem = styled.li`
-  padding: 8px 4px;
+  padding: 0px 32px 16px 32px;
 `
