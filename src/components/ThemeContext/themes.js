@@ -1,9 +1,17 @@
+const commonTheme = {}
+
 const lightTheme = {
-  main: "#F00"
+  ...commonTheme,
+  main: "#1E4147",
+  background: '#FFF',
+  textColor: '#000'
 }
 
 const darkTheme = {
-  main: "#0F0"
+  ...commonTheme,
+  main: '#F34A53',
+  background: '#121212',
+  textColor: '#fff'
 }
 
 export { darkTheme, lightTheme }

@@ -5,7 +5,7 @@ import { darkTheme, lightTheme } from "./themes";
 const Theme = React.createContext();
 
 function ThemeProvider(props) {
-  const [isDarkTheme, toggleDarkTheme] = React.useState(false);
+  const [isDarkTheme, toggleDarkTheme] = React.useState(true);
   const getTheme = () => isDarkTheme ? darkTheme : lightTheme;
   const toggleTheme = () => toggleDarkTheme(prevState => !prevState);
   
