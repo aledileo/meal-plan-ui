@@ -12,9 +12,10 @@ import styled, { keyframes } from 'styled-components'
 // `
 
 export const Details = styled.details`
-  background-color: ${props => props.theme.main}88;
+  background-color: ${props => props.theme.alternativeBackground}88;
   border-radius: 0.25em;
   margin-bottom: 2em;
+  /* padding-bottom: 2em; */
     /* animation-name: ${detailsKeyframe};
     animation-duration: 0.5s;
   & [open] ~ *: {
@@ -30,4 +31,14 @@ export const FoodList = styled.ul`
   margin: 0px;
   list-style: none;
   padding: 0px 32px 16px 32px;
+`
+
+export const CompletedText = styled.span`
+  position: relative;
+  top: -2.2em;
+  left: 17em;
+`
+
+export const FoodListContainer = styled.div`
+  padding-bottom: 16px;
 `

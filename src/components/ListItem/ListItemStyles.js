@@ -12,6 +12,7 @@ export const Checkbox = styled.input`
 
 export const ListItemText = styled.label`
   display: inline-block;
+  cursor: pointer;
 	position: relative;
   transition: all 0.2s cubic-bezier(.55, 0, .1, 1);
   ${props => !props.isCompleted ? `
